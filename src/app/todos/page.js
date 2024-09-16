@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button";
 import Nav from "./nav";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card} from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Input } from "@/components/ui/input";
-import { DragHandleDots2Icon, Pencil1Icon, TrashIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons'
+import { DragHandleDots2Icon, Pencil1Icon, TrashIcon} from '@radix-ui/react-icons'
 import Link from "next/link";
 
 export default function Todos() {
@@ -68,7 +68,7 @@ export default function Todos() {
                 </TableCell>
                 <TableCell>{todo.id}</TableCell>
                 <TableCell>
-                  <Link href={`/todos/${todo.id}`} className="text-blue-600 hover:underline">
+                  <Link href={`/todo-details`} className="text-blue-600 hover:underline">
                     {todo.name}
                   </Link>
                 </TableCell>
